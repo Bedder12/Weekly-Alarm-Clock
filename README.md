@@ -26,3 +26,12 @@ In the "time" package, there's a Time class used to manage time itself. This pac
 This modular structure makes the code easier to extend and modify when needed. Each part has a clear responsibility—for example, Alarm and AlarmManager handle the alarms, while WeekAlarmClock manages the clock itself. The code also uses inheritance to create different counters and interfaces, making it easier to reuse code in different contexts.
 
 It’s like having a customizable digital clock with an adjustable alarm function that can be modified as necessary. This approach ensures that the program is not only functional but also adaptable for future updates or changes.
+
+# Result
+
+We set the current time using a text input, as shown in Figure 1. From the input, we split the text at each ":", separating it into day, hour, minute, and second. The first element (array[0]) is assigned to the day variable, and we create other variables for the hours, minutes, and seconds. Then, we use these variables to create a new instance of the setTime method from our WeekAlarmClock class, passing the variables as shown in Figure 2. Finally, in Figure 3, we can see that the time changes to the new value we set.
+
+Figure 1: (Shows that you can set day, hour, minute, and second)
+
+
+
