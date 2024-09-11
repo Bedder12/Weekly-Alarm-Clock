@@ -6,7 +6,7 @@ These requirements include allowing the user to set the day, hour, minute, and s
 By combining the interface with the necessary functionality, I aim to create an intuitive and efficient weekly alarm clock.
 
 
-# implementation
+# Implementation
 
 For the implementation, the program is divided into five packages containing classes and interfaces to make the code more maintainable, reusable, and easy to understand.
 
