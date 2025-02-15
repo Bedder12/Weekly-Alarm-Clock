@@ -1,37 +1,55 @@
-# Weekly-Alarm-Clock
-My goal is to develop a graphical application (GUI) for a weekly alarm clock. In this project, I’ll apply basic principles to build a robust and well-structured piece of software. During this exercise, I’ll focus on creating a user-friendly interface with different components while managing the logic behind the weekly alarm clock based on my requirements.
+# Week Alarm Clock - Java GUI Application
 
-These requirements include allowing the user to set the day, hour, minute, and second separately using buttons or similar controls. The clock will run continuously, and the user will be able to switch between digital and analog time displays. Additionally, it will be possible to view all the alarms that have been set and remove them all with a single button press. The GUI will also show when an alarm goes off.
+Week Alarm Clock is a Java-based graphical user interface (GUI) application designed to manage time and set alarms for users. It allows users to set the time (day, hour, minute, second) and manage alarms with functionalities like displaying the time in both analog and digital formats. The app also includes features for adding, viewing, and removing alarms. The system continuously updates the time and triggers alarms, providing users with a functional and interactive time-management tool.
 
-By combining the interface with the necessary functionality, I aim to create an intuitive and efficient weekly alarm clock.
+# Features
+- Time Management: Set day, hour, minute, and second separately.
+- Continuous Clock: The clock runs continuously, updating every second.
+- Analog/Digital Clock: Switch between analog and digital time formats.
+- Alarm Management: Add, view, and remove alarms.
+- Alarm Notifications: Display notifications when an alarm is triggered.
+- Simple GUI: Easy-to-use interface for managing time and alarms.
+  
+# How to Run the Program
+Prerequisites
+- Java Development Kit (JDK) installed.
+- IDE: Any Java IDE such as IntelliJ IDEA or Eclipse.
 
+Steps to Run the Application
+1. Clone the Repository:
+- git clone https://github.com/your-username/week-alarm-clock.git
+2. Build and Run:
+- Open the project in your IDE.
+- Build and run the WeekAlarmClock class.
+3. Usage:
+- Set the time, add alarms, and toggle between analog and digital time formats using the provided buttons and options in the GUI.
 
-# Implementation
+# Application Workflow
+1. Set Time: Users can input the time (day, hour, minute, second) through text fields or buttons.
+2. Continuous Clock: The time updates every second, and users can see the time in either analog or digital format.
+3. Add/Remove Alarms: Alarms can be added, viewed, or removed with a click of a button.
+4. Alarm Trigger: When the alarm time arrives, a notification will pop up in the GUI, and the clock will continue ticking.
+5. GUI Layout: The application uses tabs to switch between different clock formats (analog/digital).
 
 For the implementation, the program is divided into five packages containing classes and interfaces to make the code more maintainable, reusable, and easy to understand.
 
-2.1 Alarm
-In the "alarm" package, there's an Alarm class that represents individual alarms. There's also an interface named AlarmType, which defines the basic functions alarms can perform. Another class, AlarmManager, handles multiple alarms at the same time. This setup makes it easy to manage alarms separately and collectively.
+# Example Screenshots
 
-2.2 Clock
-The "clock" package contains the main clock class, WeekAlarmClock. This clock uses components like CircularCounter24 and Counter7 to track the time and determine when the alarms should be triggered. Think of it as the clock using different tools to count hours, minutes, and days of the week.
+Setting Time (Day, Hour, Minute, Second)
+![Capture](https://github.com/user-attachments/assets/beabb5ef-2eb1-41c6-9ef5-ea34422e3e6a)
 
-2.3 Counter
-The "counter" package provides various counters for handling different time units, such as hours, minutes, and seconds. These counters are essential for ensuring that the time is tracked accurately and that the alarms go off at the right time.
+Alarm Management Panel
 
-2.4 Time
-In the "time" package, there's a Time class used to manage time itself. This package also contains an interface called TimeType, which includes the functions needed to handle different aspects of time.
+![Capture](https://github.com/user-attachments/assets/dc831c14-cb06-4adc-a860-707755416a88)
 
-2.5 Package Summary
-This modular structure makes the code easier to extend and modify when needed. Each part has a clear responsibility—for example, Alarm and AlarmManager handle the alarms, while WeekAlarmClock manages the clock itself. The code also uses inheritance to create different counters and interfaces, making it easier to reuse code in different contexts.
+In the Alarm Panel, users can add, remove, or view alarms with a simple click.
 
-It’s like having a customizable digital clock with an adjustable alarm function that can be modified as necessary. This approach ensures that the program is not only functional but also adaptable for future updates or changes.
+- Add Alarm: Users can input the desired alarm time in the format Day:Hour:Minute:Second, and with a click of the "Add Alarm" button, the alarm is set.
+  
+- View Alarms: By clicking the "Show Alarm" button, users can view the currently set alarms.
+  
+- Remove Alarms: Users can remove all alarms at once by clicking the "Remove all alarms" button.
 
-# Result
-
-We set the current time using a text input, as shown in Figure 1. From the input, we split the text at each ":", separating it into day, hour, minute, and second. The first element (array[0]) is assigned to the day variable, and we create other variables for the hours, minutes, and seconds. Then, we use these variables to create a new instance of the setTime method from our WeekAlarmClock class, passing the variables as shown in Figure 2. Finally, in Figure 3, we can see that the time changes to the new value we set.
-
-Figure 1: (Shows that you can set day, hour, minute, and second)
-
+This functionality is intuitive and gives users full control over their alarm settings with minimal effort.
 
 
