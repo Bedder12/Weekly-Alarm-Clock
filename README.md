@@ -36,6 +36,7 @@ For the implementation, the program is divided into five packages containing cla
 # Example Screenshots
 
 Setting Time (Day, Hour, Minute, Second)
+
 ![Capture](https://github.com/user-attachments/assets/beabb5ef-2eb1-41c6-9ef5-ea34422e3e6a)
 
 Alarm Management Panel
